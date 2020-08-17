@@ -1,0 +1,48 @@
+.top-selling-container .col-4 {
+    text-align: center;
+}
+
+.product-info {
+    text-align: center;
+    padding: 1rem 1rem 1rem 1rem;
+}
+
+.top-selling-img {
+    text-align: center;
+    padding: 2rem 3rem 2rem 3rem;
+}
+    .top-selling-img img {
+        height: 99%;
+    }
+
+.product-name {
+    margin-bottom: 0px;
+}
+.top-selling-arrow {
+    font-size: 2rem;
+    padding: 2rem 0 2rem 0;
+}
+.top-selling-arrow button {
+    padding: 2rem 0.5rem 1rem 0.5rem;
+}
+
+@media screen and (max-width: 1024px) {
+    .top-selling-container {
+        width: 80%;
+    }
+    .top-selling-img {
+        text-align: center;
+        padding: 1rem 1rem 1rem 1rem;
+    }
+
+    .top-selling-img img {
+        height: 99%;
+    }
+    .top-selling-arrow {
+    font-size: 2rem;
+    padding: 2rem 0 2rem 0;
+}
+.top-selling-arrow button {
+    padding: 0rem 0.5rem 0rem 0.5rem;
+}
+}

@@ -1,0 +1,124 @@
+.goodwill-container {
+    right: 0;
+    width: 60%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.goodwill-col {
+    padding: 1rem 0 1rem 0;
+}
+
+.goodwill-col img {
+    max-width: 41px;
+    max-height: 41px;
+    height: auto;
+    margin-right: 0.5rem;
+}
+.goodwill-col span {
+    font-size: 0.75rem;
+    color: gray;
+}
+
+.goodwill-main {
+    text-align: center;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    height: 100%;
+}
+.goodwill-main-countdown {
+    margin-top: -12%;
+}
+.goodwill-main-countdown-item {
+    padding: 0.75rem;
+    margin: 0.5rem;
+}
+
+.goodwill-sub-top {
+    margin-bottom: 1rem;
+}
+
+.goodwill-sub-top {
+    position: relative;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    line-height: 1.5rem;
+    text-align: right;
+    height: 49%;
+}
+.goodwill-sub-bot {
+    position: relative;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    line-height: 1.5rem;
+    text-align: right;
+    /* height: 48%; */
+}
+.goodwill-sub-top p {
+    position: absolute;
+    left: 5%;
+    top: 48%;
+    margin-top: 10%;
+}
+.goodwill-sub-bot p {
+    position: absolute;
+    margin-top: 15%;
+    left: 5%;
+}
+.a1 {
+    position: relative;
+    text-align: left;
+}
+
+@media screen and (max-width: 1024px) {
+    .goodwill-col {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .goodwill-col p {
+        text-align: center;
+        width: 60%;
+    }
+    .goodwill-container {
+        right: 0;
+        width: 80%;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    .goodwill-bot img {
+        width: 100%;
+    }
+
+    .font-3 {
+        font-size: 2rem;
+    }
+
+    .font-2 {
+        font-size: 1rem;
+    }
+    .goodwill-sub {
+        padding: 2rem 0 1rem 0;
+    }
+    .goodwill-sub {
+        display: flex;
+        justify-content: space-between;
+    }
+    .goodwill-sub-top {
+        position: relative;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+        line-height: 1.5rem;
+        text-align: center;
+        width: 48%;
+        height: 100%;
+    }
+    .goodwill-sub-bot {
+        position: relative;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+        line-height: 1.5rem;
+        text-align: center;
+        width: 48%;
+    }
+}

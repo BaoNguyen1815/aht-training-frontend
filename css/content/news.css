@@ -1,0 +1,25 @@
+.news-img {
+    width: 100%;
+    position: relative;
+    background-size: cover;
+    margin-bottom: 2rem;
+    box-shadow: 1px 1px ;
+    overflow: hidden;
+}
+.news-img img{
+  position: absolute;
+ right: 0;
+ top: 0;
+ width: 150%;
+ height: 100%;
+}
+.news-text{
+  font-weight: bold;
+  padding: 1rem 2rem 2rem 0rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .news-container{
+    width: 80%;
+  }
+}

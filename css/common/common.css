@@ -1,0 +1,162 @@
+.blue{
+  color: rgb(105, 189, 210);
+}
+
+.grey{
+  color: gray;
+}
+
+.white{
+  color: white;
+}
+.bg-grey{
+  background-color: rgb(240, 240, 240);
+}
+.bg-white{
+  background-color:white;
+}
+.font-2{
+  font-size: 2rem;
+}
+.font-3{
+  font-size: 3rem;
+}
+.font-4{
+  font-size: 4rem;
+}
+.mg-0{
+  margin: 0;
+}
+.width-50{
+  width: 50%;
+}
+.width-100{
+  width: 100%;
+}
+.width-60{
+  width: 60%;
+}
+.width-80{
+  width: 80%;
+}
+
+.button{
+  position: absolute;
+  background-color: white;
+  color: black;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  border: none;
+  padding: .25rem 2rem .25rem 2rem;
+}
+
+.text-align-center{
+  text-align: center;
+}
+
+.title{
+  position: relative;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.title p{
+  font-weight: bold;
+  font-size: 4rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 2rem;
+  opacity: .05;
+  color: grey;
+}
+
+.title h3{
+  font-size: 2rem;
+  font-weight: bold;
+  position: relative;
+  padding-top: 2rem;
+}
+
+.left-title{
+  position: relative;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.left-title p{
+  font-weight: bold;
+  font-size: 4rem;
+  position: absolute;
+  left: 0;
+  top: 2rem;
+  opacity: .05;
+  color: grey;
+}
+
+.left-title h3{
+  font-size: 2rem;
+  font-weight: bold;
+  position: relative;
+  padding-top: 2rem;
+}
+
+a{
+  color: black;
+}
+
+button{
+  background: 0;
+  border: none;
+}
+
+.line-through{
+  text-decoration: line-through;
+}
+
+.bold{
+  font-weight: bold;
+}
+
+@media screen and (max-width: 1024px) {
+.title p{
+  font-weight: bold;
+  font-size: 3rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 1.5rem;
+  opacity: .05;
+  color: grey;
+}
+
+.title h3{
+  font-size: 1.5rem;
+  font-weight: bold;
+  position: relative;
+  padding-top: 1rem;
+}
+
+.left-title{
+  position: relative;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.left-title p{
+  font-weight: bold;
+  font-size: 2rem;
+  position: absolute;
+  left: 0;
+  top: 2rem;
+  opacity: .05;
+  color: grey;
+}
+.left-title h3{
+  font-size: 1rem;
+  font-weight: bold;
+  position: relative;
+  padding-top: 1rem;
+}
+}

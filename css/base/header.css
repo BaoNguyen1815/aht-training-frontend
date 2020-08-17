@@ -1,0 +1,221 @@
+.header-container {
+    right: 0;
+    width: 60%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.header-logo {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.header-nav {
+    display: flex;
+    padding: 1rem 1rem 1rem 1rem;
+}
+.header-nav-select {
+    background: none;
+    padding: 0.5rem 0 0.5rem 1rem;
+    border-radius: 40px 0 0 40px;
+    color: grey;
+}
+
+#header-nav-search-btn {
+    background: rgb(105, 189, 210);
+    padding: 0 1.5rem 0 1rem;
+    border-radius: 0px 40px 40px 0px;
+    margin-right: 3%;
+}
+.input-form {
+    padding: 0.5rem 1rem 0.5rem 1rem;
+}
+
+.header-nav-icon {
+    background: none;
+}
+
+.navbar {
+    justify-content: center;
+    background-color: rgb(105, 189, 210);
+    color: white;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+}
+.navbar-right a {
+    padding-right: 1rem;
+}
+.navbar-left a {
+    padding-left: 1rem;
+}
+
+.navbar-mobile-container {
+    display: none;
+}
+
+@media screen and (min-width: 1025px) {
+    .side-bar {
+        display: none;
+    }
+    .search-responsive {
+        height: 0;
+        overflow: hidden;
+    }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+    .header-container {
+        right: 0;
+        width: 80%;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+
+    .header-nav {
+        display: flex;
+        padding: 1rem 1% 1rem 1%;
+    }
+    .header-nav-select {
+        background: none;
+        padding: 0.5rem 0 0.5rem 1rem;
+        border-radius: 40px 0 0 40px;
+        color: grey;
+    }
+    .header-nav {
+        display: flex;
+        padding: 1rem 1rem 1rem 1rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+     .search-responsive {
+        background-color: gray;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        height: 0;
+        overflow: hidden;
+        transition: 0.4s;
+    }
+
+    .search-responsive-select {
+        background: white;
+        padding: 0.5rem 1rem 0.5rem 1rem;
+        border-radius: 40px 0 0 40px;
+        color: grey;
+    }
+
+    #search-responsive-search-btn {
+        background: rgb(105, 189, 210);
+        padding: 0 1.5rem 0 1rem;
+        border-radius: 0px 40px 40px 0px;
+        margin-right: 3%;
+    }
+
+    .search-responsive-container {
+        width: 80%;
+        display: flex;
+        justify-content: center;
+    }
+    .header-container {
+        right: 0;
+        width: 90%;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .header-logo {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+
+    .header-container .header-nav-select {
+        display: none;
+    }
+
+    .header-container .header-nav-search {
+        display: none;
+    }
+    .navbar-container {
+        display: none;
+    }
+
+    .navbar-mobile-container {
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+    }
+
+    .sidebar {
+        height: 100vh;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: white;
+        overflow-x: hidden;
+        transition: 0.5s;
+    }
+    .sidebar a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        /* font-size: 25px; */
+        color: black;
+        display: block;
+        transition: 0.3s;
+    }
+    .sidebar-main {
+        background-color: grey;
+        display: flex;
+        justify-content: space-between;
+        padding: 16px 16px 16px 16px;
+    }
+
+    .sidebar-main span {
+        color: black;
+    }
+    .sidebar .closebtn {
+        margin-left: 50px;
+    }
+}
+
+@media screen and (max-width : 600px){
+   .search-responsive {
+        background-color: gray;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        height: 0;
+        overflow: hidden;
+        transition: 0.4s;
+    }
+
+    .search-responsive-select {
+        background: white;
+        padding: 0.5rem 0rem 0.5rem 0rem;
+        border-radius: 40px 0 0 40px;
+        color: grey;
+    }
+
+    #search-responsive-search-btn {
+        background: rgb(105, 189, 210);
+        padding: 0 .5rem 0 .5rem;
+        border-radius: 0px 40px 40px 0px;
+        margin-right: 3%;
+    }
+
+    .search-responsive-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .input-form{
+      padding: .5rem 0rem .5rem .25rem;
+    }
+}

@@ -1,0 +1,39 @@
+.dietary-text p{
+  line-height: 1em;
+  font-size: 3vw;
+}
+.dietary-text{
+  width: 50%;
+}
+.dietary-text{
+  width: 45%;
+  overflow: hidden;
+}
+
+.dietary-img{
+  width: 55%;
+}
+
+.dietary-img img{
+  width: 100%;
+  height: auto;
+}
+.dietary-container{
+  padding: 2rem;
+}
+
+.hr{
+  display: block;
+    width: 20%;
+    height: 2px;
+    border: 2px;
+    margin-left: 2px;
+    background-color: rgb(105, 189, 210);
+}
+
+@media screen and (max-width: 1024px) {
+  .dietary-container{
+    width: 100%;
+}
+
+}

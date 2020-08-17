@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Medy plus</title>
+        <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="./css/master.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- <link rel="stylesheet/less" type="text/css" href="styles.less" />
+        <script src="//cdn.jsdelivr.net/npm/less"></script> -->
+    </head>
+    <body>
+        <div class="header container-fluid d-flex justify-content-center">
+            <div class="header-container d-flex justify-content-between">
+                <div class="header-logo">
+                    <img src="./assets/images/logo.png" alt="logo" />
+                </div>
+                <div class="header-nav">
+                    <select name="search-method" class="header-nav-select">
+                        <option value="Medical">All categories</option>
+                        <option value="Medical">Medical</option>
+                        <option value="Medical">Medical</option>
+                        <option value="Medical">Medical</option>
+                    </select>
+                    <input
+                        type="text"
+                        class="header-nav-search input-form"
+                        placeholder="Search for product"
+                    />
+                    <button
+                        type="submit"
+                        id="header-nav-search-btn"
+                        class="header-nav-search btn"
+                        value=""
+                    >
+                        <img alt="icon" src="./assets/images/search.png" />
+                    </button>
+                    <button class="header-nav-icon btn">
+                        <img alt="icon" src="./assets/images/tool.png" />
+                    </button>
+                    <button class="header-nav-icon btn">
+                        <img alt="icon" src="./assets/images/cart.png" />
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="navbar container-fluid">
+            <div class="navbar-container">
+                <div class="navbar-left">
+                    <img alt="nav-icon" src="./assets/images/nav-icon.png" />
+                    <a>CATEGORIES</a>
+                </div>
+                <div class="navbar-right d-flex">
+                    <a>HOME</a>
+                    <a>ABOUT</a>
+                    <a>SERVICES</a>
+                    <a>BLOG</a>
+                    <a>PAGE</a>
+                    <a>CONTACT</a>
+                </div>
+            </div>
+            <div class="navbar-mobile-container">
+                <div
+                    onclick="openNav()"
+                    class="navbar-left d-flex align-items-center"
+                >
+                    <img alt="nav-icon" src="./assets/images/nav-icon.png" />
+                </div>
+                <div class="sidebar shadow-lg" id="sidebar">
+                    <div class="sidebar-main">
+                        <span>Main Menu</span>
+                        <button class="closebtn" onclick="closeNav()">X</button>
+                    </div>
+                    <!-- <hr /> -->
+                    <a href="#">Home</a>
+                    <hr />
+                    <a href="#">About</a>
+                    <hr />
+                    <a href="#">Services</a>
+                    <hr />
+                    <a href="#">Blog</a>
+                    <hr />
+                    <a href="#">Page</a>
+                    <hr />
+                    <a href="#">Contact</a>
+                    <hr />
+                    <a href="#">Categories</a>
+                    <hr />
+                </div>
+                <div class="navbar-right d-flex">
+                    <div class="header-nav">
+                        <button
+                            type="submit"
+                            id="header-nav-search-btn"
+                            class="header-nav-search btn"
+                            value=""
+                            onclick="openSearch()"
+                        >
+                            <img alt="search-icon" src="./assets/images/search.png" />
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="search-responsive" class="search-responsive container-fluid d-flex justify-content-center">
+            <div class="search-responsive-container">
+                <select name="search-method" class="search-responsive-select">
+                    <option value="Medical">All categories</option>
+                    <option value="Medical">Medical</option>
+                    <option value="Medical">Medical</option>
+                    <option value="Medical">Medical</option>
+                </select>
+                <input
+                    type="text"
+                    class="search-responsive-search input-form"
+                    placeholder="Search for product"
+                />
+                <button
+                    type="submit"
+                    id="search-responsive-search-btn"
+                    class="search-responsive-search btn"
+                    value=""
+                >
+                    <img alt="search" src="./assets/images/search.png" />
+                </button>
+            </div>
+        </div>
+        <div class="banner container-fluid">
+            <div class="banner-container">
+                <!-- Full-width images with number and caption text -->
+                <div class="banner-slide faded">
+                    <img src="./assets/images/banner1.png" />
+                    <div class="banner-text">
+                        <p class="banner-text-top">
+                            FIND ANY <span class="blue">MEDICINE</span
+                            ><br /><span>YOU NEED</span>
+                        </p>
+                        <p class="banner-text-middle">
+                            Free Standard Shipping Everyday
+                        </p>
+                        <div class="banner-text-bot">
+                            <p class="">Shop now</p>
+                            <span class="blue"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="banner-slide faded">
+                    <img src="./assets/images/banner1.png" />
+                    <div class="banner-text">
+                        <p class="banner-text-top">
+                            FIND ANY <span class="blue">MEDICINE</span
+                            ><br /><span>YOU NEED</span>
+                        </p>
+                        <p class="banner-text-middle">
+                            Free Standard Shipping Everyday
+                        </p>
+                        <div class="banner-text-bot">
+                            <p class="">Shop now</p>
+                            <span class="blue"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="banner-slide faded">
+                    <img src="./assets/images/banner1.png" />
+                    <div class="banner-text">
+                        <p class="banner-text-top">
+                            FIND ANY <span class="blue">MEDICINE</span
+                            ><br /><span>YOU NEED</span>
+                        </p>
+                        <p class="banner-text-middle">
+                            Free Standard Shipping Everyday
+                        </p>
+                        <div class="banner-text-bot">
+                            <p class="">Shop now</p>
+                            <span class="blue"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                <br />
+            </div>
+        </div>
+
+        <div class="goodwill container-fluid d-flex justify-content-center">
+            <div class="goodwill-container">
+                <div class="goodwill-top">
+                    <div class="row">
+                        <div class="col goodwill-col d-flex">
+                            <img src="./assets/images/freeship.png" />
+                            <p>
+                                <b>Free shipping</b><br /><span
+                                    >Free shipping for all US order</span
+                                >
+                            </p>
+                        </div>
+                        <div class="col goodwill-col d-flex">
+                            <img src="./assets/images/support.png" />
+                            <p>
+                                <b>Support 24/7</b><br /><span
+                                    >We support 24 hours a day</span
+                                >
+                            </p>
+                        </div>
+                        <div class="col goodwill-col d-flex">
+                            <img src="./assets/images/30dayreturn.png" />
+                            <p>
+                                <b>30 Days Return</b><br /><span
+                                    >You have 30 days to Secure Payment</span
+                                >
+                            </p>
+                        </div>
+                        <div class="col goodwill-col d-flex">
+                            <img src="./assets/images/freeship.png" />
+                            <p>
+                                <b>Secure Payment</b><br /><span
+                                    >100% Secure & Safe</span
+                                >
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="goodwill-bot row">
+                    <div class="col-12 col-xl-7 bg-grey goodwill-main">
+                        <img src="./assets/images/sale3.png" />
+                        <div
+                            class="goodwill-main-countdown d-flex justify-content-center"
+                        >
+                            <div class="goodwill-main-countdown-item bg-white">
+                                DAY
+                            </div>
+                            <div class="goodwill-main-countdown-item bg-white">
+                                HRS
+                            </div>
+                            <div class="goodwill-main-countdown-item bg-white">
+                                MINS
+                            </div>
+                            <div class="goodwill-main-countdown-item bg-white">
+                                SECS
+                            </div>
+                        </div>
+                        <div class="goodwill-main-text">
+                            <p class="font-2 mg-0"><b>BEAUTY & COSMETICS</b></p>
+                            <p class="grey">
+                                Sale up to <span class="blue">40%</span> off
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-xl-5 goodwill-sub">
+                        <div class="goodwill-sub-top bg-grey">
+                            <div class="a1">
+                                <p>
+                                    <b class="blue font-3">30%</b><br /><b
+                                        class="font-2"
+                                        >DISCOUNT</b
+                                    ><br /><span class="font-1 grey"
+                                        >For Dietary Supplement</span
+                                    >
+                                </p>
+                            </div>
+                            <img src="./assets/images/sale2.png" />
+                        </div>
+                        <div class="goodwill-sub-bot bg-grey">
+                            <div class="a1">
+                                <p>
+                                    <b class="font-2">ACCESSORIES</b><br />
+                                    <span class="grey"
+                                        >Sale up to
+                                        <span class="blue">20%</span>off</span
+                                    >
+                                </p>
+                            </div>
+                            <img src="./assets/images/sale1.png" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div
+            class="our-categories container-fluid d-flex justify-content-center bg-grey"
+        >
+            <div class="our-categories-container">
+                <div class="title">
+                    <h3>OUR CATEGORIES</h3>
+                    <p>CATEGORIES</p>
+                </div>
+
+                <div class="row">
+                    <div class="col-xl-6 col-12">
+                        <div class="category-hover">
+                            <div class="category-top" id="cate1">
+                                <div class="dark-opacity"></div>
+                            </div>
+                            <button class="button width-60 font-weight-bold">
+                                Diet & Fitness
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-6">
+                        <div class="category-hover">
+                            <div class="category-bot" id="cate2">
+                                <div class="dark-opacity"></div>
+                            </div>
+                            <button class="button width-80 font-weight-bold">
+                                Beauty
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-6">
+                        <div class="category-hover">
+                            <div class="category-bot" id="cate3">
+                                <div class="dark-opacity"></div>
+                            </div>
+                            <button class="button width-80 font-weight-bold">
+                                Dental care
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-3 col-6">
+                        <div class="category-hover">
+                            <div class="category-bot" id="cate4">
+                                <div class="dark-opacity"></div>
+                            </div>
+                            <button class="button width-80 font-weight-bold">
+                                Beauty
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-6">
+                        <div class="category-hover">
+                            <div class="category-bot" id="cate5">
+                                <div class="dark-opacity"></div>
+                            </div>
+                            <button class="button width-80 font-weight-bold">
+                                Dental care
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-12">
+                        <div class="category-hover">
+                            <div class="category-top" id="cate6">
+                                <div class="dark-opacity"></div>
+                            </div>
+                            <button class="button width-60 font-weight-bold">
+                                Diet & Fitness
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="top-selling container-fluid d-flex justify-content-center">
+            <div class="top-selling-container width-60">
+                <div class="d-flex justify-content-between">
+                    <div class="left-title">
+                        <h3>TOP SELLING</h3>
+                        <p>PRODUCTS</p>
+                    </div>
+
+                    <div class="top-selling-arrow">
+                        <button><</button> <button>></button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-xl-3">
+                        <div class="top-selling-img bg-grey">
+                            <img src="./assets/images/prod1.png" />
+                        </div>
+                        <div class="product-info">
+                            <p class="product-name">
+                                <b>Nature's Bounty Biotin 10000 MCG</b>
+                            </p>
+                            <p class="blue"><b>$30.00</b></p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-xl-3">
+                        <div class="top-selling-img bg-grey">
+                            <img src="./assets/images/prd2.png" />
+                        </div>
+                        <div class="product-info">
+                            <p class="product-name">
+                                <b>Best Colon Detox Formula Advanced Colon</b>
+                            </p>
+                            <p class="blue">
+                                <b class="grey line-through">$35.00</b
+                                ><span> </span><b>$30.00</b>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-xl-3">
+                        <div class="top-selling-img bg-grey">
+                            <img src="./assets/images/prd3.png" />
+                        </div>
+                        <div class="product-info">
+                            <p class="product-name">
+                                <b>Nature's Bounty Biotin 10000 MCG</b>
+                            </p>
+                            <p class="blue"><b>$30.00</b></p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-xl-3">
+                        <div class="top-selling-img bg-grey">
+                            <img src="./assets/images/prd4.png" />
+                        </div>
+                        <div class="product-info">
+                            <p class="product-name">
+                                <b>Best Colon Detox Formula Advanced Colon</b>
+                            </p>
+                            <p class="blue"><b>$30.00</b></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="dietary container-fluid d-flex justify-content-center">
+            <div
+                class="dietary-container d-flex bg-grey width-60 justify-content-around"
+            >
+                <div
+                    class="dietary-text d-flex flex-column justify-content-center"
+                >
+                    <p class="">
+                        <b>
+                            <span class="blue">DIETARY</span> <br />
+                            <span>SUPPLEMENT</span>
+                        </b>
+                    </p>
+                    <a>View Products</a>
+                    <span class="hr blue"></span>
+                </div>
+                <div class="dietary-img">
+                    <img src="./assets/images/dietary.png" />
+                </div>
+            </div>
+        </div>
+
+        <div
+            class="new-arrival top-selling container-fluid d-flex justify-content-center"
+        >
+            <div class="top-selling-container width-60">
+                <div class="d-flex justify-content-between">
+                    <div class="left-title">
+                        <h3>NEW ARRIVALS</h3>
+                        <p>ARRIVALS</p>
+                    </div>
+
+                    <div class="top-selling-arrow">
+                        <button><</button> <button>></button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-xl-3">
+                        <div class="top-selling-img bg-grey">
+                            <img src="./assets/images/prod1.png" />
+                        </div>
+                        <div class="product-info">
+                            <p class="product-name">
+                                <b>Nature's Bounty Biotin 10000 MCG</b>
+                            </p>
+                            <p class="blue"><b>$30.00</b></p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-xl-3">
+                        <div class="top-selling-img bg-grey">
+                            <img src="./assets/images/prd2.png" />
+                        </div>
+                        <div class="product-info">
+                            <p class="product-name">
+                                <b>Best Colon Detox Formula Advanced Colon</b>
+                            </p>
+                            <p class="blue">
+                                <b class="grey line-through">$35.00</b
+                                ><span> </span><b>$30.00</b>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-xl-3">
+                        <div class="top-selling-img bg-grey">
+                            <img src="./assets/images/prd3.png" />
+                        </div>
+                        <div class="product-info">
+                            <p class="product-name">
+                                <b>Nature's Bounty Biotin 10000 MCG</b>
+                            </p>
+                            <p class="blue"><b>$30.00</b></p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-xl-3">
+                        <div class="top-selling-img bg-grey">
+                            <img src="./assets/images/prd4.png" />
+                        </div>
+                        <div class="product-info">
+                            <p class="product-name">
+                                <b>Best Colon Detox Formula Advanced Colon</b>
+                            </p>
+                            <p class="blue"><b>$30.00</b></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="news container-fluid d-flex justify-content-center bg-grey">
+            <div class="news-container width-60">
+                <div class="title text-align-center">
+                    <h3>LASTEST NEW</h3>
+                    <p>HOT NEWS</p>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-10">
+                        <div class="news-img">
+                            <img src="./assets/images/banner1.png" />
+                        </div>
+                        <a href="/" class="news-text"
+                            >Proplems may help problem antibiotic resistence
+                            Probiotics may help</a
+                        >
+                        <p>13 June 2018 by <span class="blue">Admin</span></p>
+                    </div>
+                    <div class="col-lg-4 col-10">
+                        <div class="news-img">
+                            <img src="./assets/images/category1.png" />
+                        </div>
+                        <a href="/" class="news-text"
+                            >Proplems may help problem antibiotic resistence
+                            Probiotics may help</a
+                        >
+                        <p>13 June 2018 by <span class="blue">Admin</span></p>
+                    </div>
+                    <div class="col-lg-4 col-10">
+                        <div class="news-img">
+                            <img src="./assets/images/category2.png" />
+                        </div>
+                        <a href="/" class="news-text"
+                            >Proplems may help problem antibiotic resistence
+                            Probiotics may help</a
+                        >
+                        <p>13 June 2018 by <span class="blue">Admin</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="sign-up container-fluid d-flex justify-content-center">
+            <div class="sign-up-container white text-align-center">
+                <p class="font-2">
+                    <b>Keep update & Get unlimited discount</b>
+                </p>
+                <p class="grey">
+                    Sign up for our newsletter to receive updates and exclusive
+                    offers
+                </p>
+                <div class="sign-up-field">
+                    <input
+                        type="text"
+                        placeholder="Enter your email address here"
+                    />
+                    <button>Sign up</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="brand container-fluid d-flex justify-content-center">
+            <div class="brand-container">
+                <div class="row">
+                    <div class="col-md-4 col-12 col-xl brand-img">
+                        <img src="./assets/images/brand1.png" />
+                    </div>
+                    <div class="col-md-4 col-12 col-xl brand-img">
+                        <img src="./assets/images/brand2.png" />
+                    </div>
+                    <div class="col-md-4 col-12 col-xl brand-img">
+                        <img src="./assets/images/brand3.png" />
+                    </div>
+                    <div class="col-md-5 col-12 col-xl brand-img">
+                        <img src="./assets/images/brand2.png" />
+                    </div>
+                    <div class="col-md-5 col-12 col-xl brand-img">
+                        <img src="./assets/images/brand1.png" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div
+            class="footer bg-grey d-flex justify-content-center container-fluid"
+        >
+            <div class="footer-container">
+                <div class="row">
+                    <div
+                        class="col-lg-3 col-md-6 col-12 footer-col footer-first-col"
+                    >
+                        <h4>CONTACT US</h4>
+                        <p>
+                            <img alt="" src="./assets/images/location.png" />Lorem
+                            ipsum is Standard industry
+                        </p>
+                        <p>
+                            <img alt=""
+                                src="./assets/images/email.png"
+                            />mediplus@gmail.com
+                        </p>
+                        <p>
+                            <img alt="" src="./assets/images/callus.png" />0955 144 177
+                        </p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12 footer-col">
+                        <h4>COMPANY</h4>
+                        <a href="/">About us</a>
+                        <a href="/">Team member</a>
+                        <a href="/">Carrer</a>
+                        <a href="/">Contact us</a>
+                        <a href="/">Affilate</a>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12 footer-col">
+                        <h4>CATEGORIES</h4>
+                        <a href="/">Home medicine</a>
+                        <a>Baby & child</a>
+                        <a href="/">Diet & nutrition</a>
+                        <a href="/">Beauty</a>
+                        <a href="/">Fitness & vitamins</a>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12 footer-col">
+                        <h4>QUICK LINKS</h4>
+                        <a href="/">My Account</a>
+                        <a href="/">Store location</a>
+                        <a href="/">Order tracking</a>
+                        <a href="/">FAQs</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="./script/banner.js"></script>
+        <script src="./script/setheight.js"></script>
+        <script src="./script/navbar.js"></script>
+        <script
+            src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>
