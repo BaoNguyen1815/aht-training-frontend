@@ -6,7 +6,6 @@ function setNewsHeight(){
   var newsWidth = $(".news-img").first().outerWidth();
   newsWidth = newsWidth*75/100;
   $(".news-img").css({ height: newsWidth + "px" });
-  console.log(newsWidth)
 }
 
 
